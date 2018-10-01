@@ -1,19 +1,53 @@
+/* stylelint-disable declaration-colon-newline-after  */
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/metropolis-medium-webfont.woff2') format('woff2'),
+    url('./fonts/metropolis-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  font-style: italic;
+  font-weight: 500;
+  src: url('./fonts/metropolis-mediumitalic-webfont.woff2') format('woff2'),
+    url('./fonts/metropolis-mediumitalic-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/metropolis-regular-webfont.woff2') format('woff2'),
+    url('./fonts/metropolis-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./fonts/metropolis-regularitalic-webfont.woff2') format('woff2'),
+    url('./fonts/metropolis-regularitalic-webfont.woff') format('woff');
+}
+/* stylelint-enable */
+
 // Theme
 // ---------------------------------------------------------------------------
 
-$primary: #3f51b5;
-$secondary: #009688;
-$tertiary: #757575;
-$light: #fff;
-$dark: #333;
-$text-dark: #212121;
+$primary: #1a1b23;
+$secondary: #3d464d;
+$tertiary: #a3a2a5;
+$light: #f5f8fa;
+$dark: #000;
+$text-dark: #1a1b23;
 $text-light: $light;
-$code-background: #f8f8f8;
+$code-background: #f5f8fa;
 $overlay: transparentize(#000, 0.5);
 $font-size: 28px;
 $font-size-impact: 128px;
-$font: Arial, Helvetica, sans-serif;
-$font-title: Arial, Helvetica, sans-serif;
+$font: 'Metropolis', sans-serif;
+$font-title: 'Metropolis', sans-serif;
 $font-fixed: 'Lucida Console', Monaco, monospace;
 $margin: 20px;
 $iframe-scale: 1.5;
