@@ -8,6 +8,13 @@ cache:
 install: yarn install --pure-lockfile
 script:
   - yarn run lint
-  - yarn test
+  - yarn run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
 notifications:
   slack: 'kleros:Ub8n81EgKJ3iRrMDyWyQIVJp'

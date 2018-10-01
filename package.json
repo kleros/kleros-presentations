@@ -18,13 +18,12 @@
     "lint:scss": "kleros-scripts lint:scss",
     "lint:js": "kleros-scripts lint:js",
     "lint": "yarn run lint:scss && yarn run lint:js",
-    "test": "yarn run build && yarn run build:pdf",
+    "test": "yarn run build",
     "precommit": "kleros-scripts precommit",
     "commitmsg": "kleros-scripts commitmsg",
     "cz": "kleros-scripts cz",
     "start": "bs serve ./src",
-    "build": "bs export ./src/**/*.md",
-    "build:pdf": "bs pdf ./src"
+    "build": "bs export ./src --output ./build && bs pdf ./src --output ./build"
   },
   "commitlint": {
     "extends": [

@@ -30,5 +30,4 @@ A collection of presentations and workshops created by the Kleros team and commu
 - `yarn run lint` - Lint the entire project's .scss and .js files.
 - `yarn test` - Run tests.
 - `yarn run cz` - Run commitizen.
-- `yarn run build` - Export presentations.
-- `yarn run build:pdf` - Export presentations as PDFs.
+- `yarn run build` - Export presentations as webpages and PDFs.

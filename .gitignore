@@ -5,8 +5,7 @@
 
 # Production
 /.tmp/
-/dist/
-/pdf/
+/build/
 
 # Logs
 /yarn-debug.log*
