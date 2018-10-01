@@ -14,6 +14,10 @@
 
 A collection of presentations and workshops created by the Kleros team and community.
 
+## Presentations
+
+- Example - { [Presentation](https://kleros.io/kleros-presentations/example.html) | [PDF](https://kleros.io/kleros-presentations/example.pdf) }.
+
 ## Get Started
 
 1.  Clone this repo.
