@@ -1,0 +1,42 @@
+{
+  "name": "kleros-presentations",
+  "version": "0.0.1",
+  "description": "A collection of presentations and workshops created by the Kleros team and community.",
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "governance",
+    "kleros",
+    "presentations"
+  ],
+  "repository": "https://github.com/kleros/kleros-presentations",
+  "author": "Kleros",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "prettify": "kleros-scripts prettify",
+    "lint:scss": "kleros-scripts lint:scss",
+    "lint:js": "kleros-scripts lint:js",
+    "lint": "yarn run lint:scss && yarn run lint:js",
+    "test": "yarn run build && yarn run build:pdf",
+    "precommit": "kleros-scripts precommit",
+    "commitmsg": "kleros-scripts commitmsg",
+    "cz": "kleros-scripts cz",
+    "start": "bs serve ./src",
+    "build": "bs export ./src/**/*.md",
+    "build:pdf": "bs pdf ./src"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^1.0.1",
+    "kleros-scripts": "^0.12.0",
+    "standard-version": "^4.4.0"
+  },
+  "dependencies": {
+    "backslide": "^2.3.2"
+  }
+}
